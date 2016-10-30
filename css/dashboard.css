@@ -1,0 +1,267 @@
+/*
+ * Base structure
+ */
+
+
+
+.html {
+	
+	min-height:100%;/* make sure it is at least as tall as the viewport */
+    position:relative;
+	}
+	
+	
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+   margin: 0;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  color: #FFFFFF;
+}
+
+
+/*
+ * Global add-ons
+ */
+p {
+	
+	line-height: 1.6;} 
+ 
+ .cover {
+	 background: url('../imgs/lfc_osc_bg1.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+
+	
+	}
+	
+	.sidebar {
+	top: 0px;
+
+	
+	}
+ 
+
+.sub-header {
+  padding-bottom: 10px;
+  
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+
+
+.lfc-logo {
+	background-image: url(../imgs/lfc_logo.png);
+	display: block;
+    margin: 0 auto;
+    width: 119px;
+    min-height: 90px;
+    max-height: 160px;
+    height: 20%;
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.lfc-xtra-logo {
+	background-image: url(../imgs/lfc-xtra_logo.svg);
+	display: block;
+    margin: 0 auto;
+    width: 40%;
+    min-height: 90px;
+    max-height: 160px;
+    height: 20%;
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.lfc-xtra-osc {
+	background-image: url(../imgs/lfc_osc.svg);
+    display: block;
+    margin: 0 auto;
+    width: 65%;
+    height: 26px;
+    min-height: 100px;
+	margin-top: 20px;
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.lfc-phone {
+	background-image: url(../imgs/lfc-phone-screen.jpg);
+	position: absolute;
+	display: block;
+	margin: 0 auto;
+    bottom: 0;
+    width: 355px;
+	margin-left:-177.5px;
+    min-height: 300px;
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+	z-index: 2;
+	left: 50%;
+}
+
+.main {
+	margin-top: 12em;
+	padding-left: 6em;
+	
+	}
+	
+.btn-default {
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    height: 44px;
+    padding: 0;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 42px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none !important;
+    background-color: #E31B23;
+    color: #fff !important;
+	margin-top: 1.2em;
+	}
+	
+	
+	.header-underline::after {
+    content: '';
+    display: block;
+    position: relative;
+    bottom: -12px;
+    width: 80px;
+    height: 3px;
+    background-color: #E31B23;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #E31B23;
+    
+  }
+  
+  
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  
+}
+
+.page-header {
+    padding-bottom: 0;
+    margin: 40px 0 20px;
+   border-bottom: 0px; 
+   padding-top: 1.2em;
+}
+
+
+.paragraph-top-margin {
+
+   padding-top: 1.2em;
+}
+
+.form-control {
+    display: block;
+    width: 50%;
+    height: 34px;
+    padding: 6px 12px;
+	padding-left: 0;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: transparent;
+    background-image: none;
+	border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    
+}
+/*
+ * Main content
+ */
+
+
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
